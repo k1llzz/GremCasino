@@ -1,0 +1,66 @@
+body{
+    background-color: #050831;
+    color:#d5e6f7;
+    font-size: 14px;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    padding-left: 0;
+}
+.nav > li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav > li > a{
+    text-decoration: none;
+    color:#d5e6f7;
+}
+.registerbtn {
+    background-color: #133072;
+    color: #d5e6f7;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .signbtn {
+    background-color: #133072;
+    color: #d5e6f7;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    
+  }
+  .container {
+    padding: 8px;
+  }
+  .signin {
+    background-color: #133072;
+    text-align: center;
+    
+  }
+  .Register {
+    background-color: #133072;
+    text-align: center;
+  }
+  .signin >p> a{
+    text-decoration: none;
+    color:#d5e6f7;}
+ .Register >p> a{
+        text-decoration: none;
+        color:#d5e6f7;}
+.Centr{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
