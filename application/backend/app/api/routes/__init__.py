@@ -6,4 +6,4 @@ from app.api.routes.v1.routes import router as v1_router
 router = APIRouter()
 
 router.include_router(admin_router, tags=["Admin"], prefix="/admin")
-router.include_router(admin_router, tags=["V1"], prefix="/v1")
+router.include_router(v1_router, tags=["V1"], prefix="/v1")
