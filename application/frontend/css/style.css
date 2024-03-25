@@ -5,8 +5,7 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
 body{
     background-color: #D62828;
@@ -62,44 +61,58 @@ header{
    
 }
 .registerbtn {
-    background-color: #133072;
-    color: #d5e6f7;
-    padding: 16px 20px;
+    background-color: #EAE2B7;
+    color: #003049;
+    padding: 16px 0px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-family: "Inter", sans-serif;
+  font-weight: 900;
   }
   .signbtn {
-    background-color: #133072;
-    color: #d5e6f7;
+    background-color: #EAE2B7;
+    color: #003049;
     padding: 16px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-    
+    font-family: "Inter", sans-serif;
+  font-weight: 900;
   }
   .container {
     padding: 8px;
   }
   .signin {
-    background-color: #133072;
+   /* background-color: #EAE2B7;*/
+   padding-top: 60px;
     text-align: center;
-    
+    font-family: "Inter", sans-serif;
+  font-weight: 900;
   }
   .Register {
-    background-color: #133072;
+    /*background-color: #EAE2B7;*/
     text-align: center;
+    font-family: "Inter", sans-serif;
+  font-weight: 900;
+  padding-top: 60px;
   }
   .signin >p> a{
     text-decoration: none;
-    color:#d5e6f7;}
+    color:#003049;
+    font-family: "Inter", sans-serif;
+  font-weight: 900;
+  }
  .Register >p> a{
         text-decoration: none;
-        color:#d5e6f7;}
+        color:#003049;
+        font-family: "Inter", sans-serif;
+  font-weight: 900;
+      }
 .Centr{
     margin: 0;
     position: absolute;
@@ -134,11 +147,14 @@ footer {
   text-align: center;  
   font-size: 36px;
   height: 50px;
-  position:fixed;
+  /*position:fixed;*/
   left:0px;
   bottom:0px;
   width:100%;
   }
+ .foot{
+    position:fixed;
+    }
 
 .Flexboxer{
   display: flex;
@@ -148,6 +164,7 @@ footer {
   height: 100%;
 }
   .wrapper {
+    text-decoration: none;
     display: flex;
     border: 10px solid #F77F00;
     justify-content: center;
@@ -171,8 +188,82 @@ margin-right: auto;
 max-width: 60%;
   }
 h3{
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 900;
   color: #003049;
-  font-size: 36px;
+  font-size: 50px;
+  padding-top: 20px;
+}
+.wrapperM {
+  text-decoration: none;
+  display: flex;
+  border: 10px solid #F77F00;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 27px;
+  margin-top: 27px;
+  width: 30%;
+  background: linear-gradient(to bottom, #EAE2B7 80%, #F77F00 20%);
+}
+.wrapperM img {
+  margin: 0%;
+  display: block;
+  max-width: 60%;
+  padding-bottom: 40px;
+}
+.wrapper img {
+  margin: 0%;
+  display: block;
+  max-width: 60%;
+  padding-bottom: 40px;
+}
+/*ДАЛЬШЕ БОГА НЕТ*/
+
+.formSIG{
+  background-color: #FCBF49;
+  border-radius: 90px;
+  box-sizing: border-box;
+  height: 400px;
+  padding: 20px;
+  width: 400px;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.formREG{
+  background-color: #FCBF49;
+  border-radius: 90px;
+  box-sizing: border-box;
+  height: 450px;
+  padding: 20px;
+  width: 400px;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+h4{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: #003049;
+  font-size: 50px;
+  padding-bottom: 50px;
+  text-align: center
+}
+.inout{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
