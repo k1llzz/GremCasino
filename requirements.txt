@@ -8,3 +8,5 @@ python-multipart==0.0.6
 black
 jose~=1.0.0
 flake8
+asyncpg==0.29.0
+python-jose==3.3.0
