@@ -1,9 +1,11 @@
 fastapi==0.104.1
 SQLAlchemy==2.0.23
 pydantic==2.5.2
-uvicorn
+uvicorn~=0.28.0
 alembic==1.13.0
 psycopg2-binary
 python-multipart==0.0.6
 black
 flake8
+asyncpg==0.29.0
+python-jose==3.3.0

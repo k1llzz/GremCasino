@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String
+from app.db.tables.base import Base
 
-from app.core.settings import Base
 
-
+# тут надо будет добавить баланс
 class Users(Base):
     __tablename__ = "users"
 
