@@ -6,3 +6,6 @@ engine = create_engine(
 )
 
 Base = declarative_base()
+
+MAIL = "gremkazino@mail.ru"
+MAIL_PASSWORD = "19bx2r2ekmBZHGz47TPu"
