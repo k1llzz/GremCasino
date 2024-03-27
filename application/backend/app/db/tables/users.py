@@ -10,3 +10,4 @@ class Users(Base):
     email = Column(String(255), unique=True, nullable=False)
     login = Column(String(255), unique=True, nullable=False)
     password = Column(String(255), nullable=False)
+    confirm_code = Column(Integer, nullable=False)
