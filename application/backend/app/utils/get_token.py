@@ -17,7 +17,9 @@ def get_token(request: Request):
 
 async def get_current_user(token: str = Depends(get_token)):
     try:
-        payload = jwt.decode(token, "L2QMijyRgXKo4mjG8N7NQKGqilWko/V8xRaVBjXlgAw=", "HS256")
+        payload = jwt.decode(
+            token, "L2QMijyRgXKo4mjG8N7NQKGqilWko/V8xRaVBjXlgAw=", "HS256"
+        )
     except JWTError:
         raise ClientErrorApiException(
             status_code=401,

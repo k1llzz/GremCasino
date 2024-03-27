@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from app.core.settings import Base
+from app.db.tables.base import Base
 
 
 # тут надо будет добавить баланс

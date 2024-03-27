@@ -5,7 +5,7 @@ from app.exceptions.api import ClientErrorApiException
 from sqlalchemy import select
 
 # моделька пайдентик
-from app.models.Users import UserSafe
+# from app.models.Users import UserSafe
 
 
 class UsersDAO(BaseDAO):
@@ -23,12 +23,12 @@ class UsersDAO(BaseDAO):
 
 
 def check_email(string):
-    if ' ' in string:
+    if " " in string:
         return False
     if "@" not in string:
         return False
-    name, domain = string.split('@', 1)
-    if '.' not in domain[1:]:
+    name, domain = string.split("@", 1)
+    if "." not in domain[1:]:
         return False
     return True
 
