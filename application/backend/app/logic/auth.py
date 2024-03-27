@@ -1,10 +1,25 @@
+from app.core.settings import async_session_maker
 from app.db.tables.users import Users
 from app.exceptions.api import ClientErrorApiException
 from app.logic.DAO import BaseDAO
+from sqlalchemy import select
+
+# моделька пайдентик
+from app.models.Users import UserSafe
 
 
 class UsersDAO(BaseDAO):
     model = Users
+
+    # эта функция должна возвращать данные о пользователе, которые будут на главной странице, по факту только логин и
+    # баланс(когда добавишь его в табличку) + ты говорил, что надо возвращать данные в виде Model(**otvev_bd.dict()),
+    # но у меня чот не пошло
+    @classmethod
+    async def find_by_id(cls, model_id: int):
+        async with async_session_maker() as session:
+            query = select(cls.model).filter_by(id=model_id)
+            result = await session.execute(query)
+            return result.scalar_one_or_none()
 
 
 def check_email(string):
