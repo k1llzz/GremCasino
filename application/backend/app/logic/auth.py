@@ -1,7 +1,7 @@
 from app.core.settings import async_session_maker
+from app.db.repos.DAO import BaseDAO
 from app.db.tables.users import Users
 from app.exceptions.api import ClientErrorApiException
-from app.logic.DAO import BaseDAO
 from sqlalchemy import select
 
 # моделька пайдентик

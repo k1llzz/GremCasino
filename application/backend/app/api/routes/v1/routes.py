@@ -1,9 +1,8 @@
 from fastapi import APIRouter, Response, Depends
-from app.models.Users import UserSafe
 from app.db.tables.users import Users
 from app.logic.auth import add_user, login_user
-from app.logic.dependence import get_current_user
-from app.logic.token import create_acces_token
+from app.utils.get_token import get_current_user
+from app.utils.create_token import create_acces_token
 
 
 router = APIRouter()
